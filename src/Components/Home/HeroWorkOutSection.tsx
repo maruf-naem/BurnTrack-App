@@ -9,7 +9,7 @@ const HeroWorkOutSection = ({workOuts}:{workOuts: WorkOutType[]}) => {
                 <h2>The Library</h2>
                 <p>Twelve lifts covering every major muscle group.</p>
             </div>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {
                     workOuts.map((item: WorkOutType, ind: number) => {
                         return <HeroCard key={ind} workout={item} />;

@@ -6,7 +6,7 @@ import Link from 'next/link';
 const HeroCard = ({workout}:{workout:WorkOutType}) => {
     return(
         <Link
-            href={`/exercise/${workout.id}`}
+            href={`/${workout.id}`}
             className="card overflow-hidden rounded-2xl border border-base-300 bg-base-200 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/60 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
             <figure className="relative h-48 w-full overflow-hidden">
