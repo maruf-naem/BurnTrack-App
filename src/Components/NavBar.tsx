@@ -96,20 +96,24 @@ const NavBar = () => {
           {/* Right */}
           <div className="navbar-end gap-2">
             {/* Plan */}
-            <button className="btn btn-sm border-white/10 bg-white/5 text-white transition-all duration-200 hover:border-cyan-400/30 hover:bg-cyan-400/10 hover:text-cyan-400">
-              Plan
-              <span className="badge badge-sm bg-cyan-400 text-black">
-                {plan.length}
-              </span>
-            </button>
+            <Link href="/my-plan">
+              <button className="btn btn-sm border-white/10 bg-white/5 text-white transition-all duration-200 hover:border-cyan-400/30 hover:bg-cyan-400/10 hover:text-cyan-400">
+                Plan
+                <span className="badge badge-sm bg-cyan-400 text-black">
+                  {plan.length}
+                </span>
+              </button>
+            </Link>
 
             {/* Saved */}
-            <button className="btn btn-sm border-white/10 bg-white/5 text-white transition-all duration-200 hover:border-pink-400/30 hover:bg-pink-400/10 hover:text-pink-400">
-              Saved
-              <span className="badge badge-sm bg-pink-400 text-black">
-                {save.length}
-              </span>
-            </button>
+            <Link href="/my-plan">
+              <button className="btn btn-sm border-white/10 bg-white/5 text-white transition-all duration-200 hover:border-pink-400/30 hover:bg-pink-400/10 hover:text-pink-400">
+                Saved
+                <span className="badge badge-sm bg-pink-400 text-black">
+                  {save.length}
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

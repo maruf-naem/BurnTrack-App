@@ -1,25 +1,19 @@
 "use client";
+import MyPlan from "@/Components/PlanPageComponents/MyPlan";
+import MySave from "@/Components/PlanPageComponents/MySave";
+import PlanHeroText from "@/Components/PlanPageComponents/PlanHeroText";
+import Tabs from "@/Components/PlanPageComponents/Tabs";
 
-import MyPlan from "@/Components/PlanPageComponents/Counters";
 
+import { useState } from "react";
 const MyPlanPage = () => {
 
+  const [activeTab, setActiveTab] = useState('plan');
   return (
     <div>
-        <MyPlan />
-      <div className="tabs tabs-lift">
-        <input type="radio" name="my_tabs_3" className="tab" aria-label="Tab 1"
-        />
-        <div className="tab-content bg-base-100 border-base-300 p-6">
-          Tab content 1
-        </div>
-
-        <input type="radio" name="my_tabs_3" className="tab" aria-label="Tab 2" defaultChecked
-        />
-        <div className="tab-content bg-base-100 border-base-300 p-6">
-          Tab content 2
-        </div>
-      </div>
+      <PlanHeroText />
+      {activeTab === 'plan' ? <MyPlan/> : <MySave />}
+      <Tabs setActiveTab={setActiveTab} />
     </div>
   );
 };
