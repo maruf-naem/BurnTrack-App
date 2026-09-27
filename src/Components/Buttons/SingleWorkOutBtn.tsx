@@ -3,7 +3,7 @@
 import { WorkOutContext } from "@/Context/WorkOutContext";
 import { WorkOutType } from "@/Type/WorkOutType";
 import { useContext } from "react";
-import { Bounce, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const SingleWorkOutBtn = ({ workout }: { workout: WorkOutType }) => {
   const { setSave, setPlan, plan, save } = useContext(WorkOutContext);

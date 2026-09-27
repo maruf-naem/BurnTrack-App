@@ -5,6 +5,7 @@ import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer";
 import WorkOutProvider from "@/Context/WorkOutContext";
 import { ToastContainer } from "react-toastify";
+import PlanCountProvider from "@/Context/PlanPageContext/PlanCountContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,10 +31,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-[#0F1115]">
         <WorkOutProvider>
-          <ToastContainer />
-          <NavBar />
-          <div>{children}</div>
-          <Footer />
+          <PlanCountProvider>
+            <ToastContainer />
+            <NavBar />
+            <div>{children}</div>
+            <Footer />
+          </PlanCountProvider>
         </WorkOutProvider>
       </body>
     </html>

@@ -22,7 +22,7 @@ const NavBar = () => {
 
       <li>
         <Link
-          href="/myplan"
+          href="/my-plan"
           className="text-white transition-colors duration-200 hover:bg-white/10 hover:text-cyan-400"
         >
           My Plan
