@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Logo from "../../public/assets/logo.png";
@@ -97,8 +97,10 @@ const NavBar = () => {
           <div className="navbar-end gap-2">
             {/* Plan */}
             <button className="btn btn-sm border-white/10 bg-white/5 text-white transition-all duration-200 hover:border-cyan-400/30 hover:bg-cyan-400/10 hover:text-cyan-400">
-              {plan.length}
-              <span className="badge badge-sm bg-cyan-400 text-black">0</span>
+              Plan
+              <span className="badge badge-sm bg-cyan-400 text-black">
+                {plan.length}
+              </span>
             </button>
 
             {/* Saved */}
