@@ -1,8 +1,9 @@
+import { WorkOutType } from '@/Type/WorkOutType';
 import Image from 'next/image';
 import Link from 'next/link';
 
 
-const HeroCard = ({workout}) => {
+const HeroCard = ({workout}:{workout:WorkOutType}) => {
     return(
         <Link
             href={`/exercise/${workout.id}`}
