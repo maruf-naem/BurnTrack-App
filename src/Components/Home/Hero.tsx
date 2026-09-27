@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import HeroImage from '../../public/assets/banner.png';
+import HeroImage from '../../../public/assets/banner.png';
 
 const Hero = () => {
     return (
         <section className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
-            <div className="flex flex-col items-center gap-8 rounded-2xl bg-[#1A1D23] p-6 sm:p-8 md:p-10 lg:flex-row lg:gap-10">
+            <div className="flex flex-col items-center gap-8 rounded-2xl bg-[#1A1D23] p-6 sm:p-8 md:p-14 lg:flex-row lg:gap-10">
                 <div className="w-full lg:w-1/2">
                     <h4 className="mb-3 text-sm font-semibold tracking-[0.2em] text-cyan-400 sm:text-base">
                         WORKOUT LIBRARY
