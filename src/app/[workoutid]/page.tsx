@@ -1,3 +1,4 @@
+import SingleWorkOutBtn from "@/Components/Buttons/SingleWorkOutBtn";
 import Image from "next/image";
 
 interface ParamsProps {
@@ -89,7 +90,9 @@ const SingleWorkout = async ({ params }: ParamsProps) => {
                     Sets
                   </p>
                 </div>
-                <div className="py-2 px-5 text-sm text-gray-200">{workout.sets}</div>
+                <div className="py-2 px-5 text-sm text-gray-200">
+                  {workout.sets}
+                </div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-white/10">
@@ -98,7 +101,9 @@ const SingleWorkout = async ({ params }: ParamsProps) => {
                     Reps
                   </p>
                 </div>
-                <div className="py-2 px-5 text-sm text-gray-200">{workout.reps}</div>
+                <div className="py-2 px-5 text-sm text-gray-200">
+                  {workout.reps}
+                </div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-white/10">
@@ -156,16 +161,7 @@ const SingleWorkout = async ({ params }: ParamsProps) => {
                 )}
               </ol>
             </div>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button className="btn border-0 bg-cyan-400 px-6 text-black hover:bg-cyan-500">
-                Add to today&apos;s plan
-              </button>
-
-              <button className="btn border-white/40 bg-transparent px-6 text-white hover:border-white hover:bg-white/10">
-                ♡ Save for later
-              </button>
-            </div>
+            <SingleWorkOutBtn workout={workout} />
           </div>
         </div>
       </div>
