@@ -7,7 +7,7 @@ export default function MySave() {
   const { exercises, min, calories } = useContext(SaveContext);
 
   return (
-    <section className="min-h-screen bg-[#0d0f12] px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+    <section className=" bg-[#0d0f12] px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
       <div className="mx-auto w-full max-w-[1120px]">
 
         <div className="overflow-hidden rounded-[14px] border border-[#292d33] bg-[#191c22] sm:rounded-[16px]">

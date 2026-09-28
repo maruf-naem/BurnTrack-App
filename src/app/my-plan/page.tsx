@@ -16,7 +16,7 @@ const MyPlanPage = () => {
       <div className="w-full py-6 sm:py-8 lg:py-10">
         <PlanHeroText />
 
-        <div className="mt-6 sm:mt-8 lg:mt-10">
+        <div>
           {activeTab === "plan" ? <MyPlan /> : <MySave />}
         </div>
 

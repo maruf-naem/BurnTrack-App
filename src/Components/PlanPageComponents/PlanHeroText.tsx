@@ -2,8 +2,8 @@ import React from "react";
 
 const PlanHeroText = () => {
   return (
-    <div className="mx-auto w-full max-w-[1120px]">
-      <div className="mb-6 sm:mb-7 lg:mb-8">
+    <div className="mx-auto w-full max-w-[1120px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <div>
         <h1 className="text-[30px] font-extrabold uppercase leading-none tracking-[-1px] text-[#f1f1f1] sm:text-[34px] lg:text-[38px] lg:tracking-[-1.5px]">
           My Plan
         </h1>
